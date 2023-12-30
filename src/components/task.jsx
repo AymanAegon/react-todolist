@@ -44,6 +44,8 @@ const Task = ({ task }) => {
       <div className="card-body">
         <h5 className="card-title">{task.title}</h5>
         <p className="card-text">{task.description}</p>
+      </div>
+      <div class="card-footer">
         <Button
           value={task.completed ? "Mark as Uncomplete" : "Mark as Complete"}
           cls="btn btn-link"

@@ -11,6 +11,7 @@
 .task-card {
     min-width: 19rem;
     max-width: 20rem;
+    padding: 0;
 }
 i.bi-plus-lg {
     font-size: 1rem;
