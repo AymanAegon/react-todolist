@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./button";
+import "./style.css";
 
 const Task = ({ task }) => {
   let tasks = localStorage.getItem("tasks");
@@ -34,10 +35,8 @@ const Task = ({ task }) => {
     window.location.reload(false);
   }
 
-  let taskStatus = "card border-primary mb-3";
-  if (task.completed === true) {
-    taskStatus = "card border-success mb-3";
-  }
+  let taskStatus = "col card mb-3 task-card border-";
+  taskStatus += task.completed ? "success" : "primary";
 
   return (
     <div className={taskStatus}>
@@ -50,7 +49,13 @@ const Task = ({ task }) => {
           cls="btn btn-link"
           onClick={switchStatus}
         />
-        <Button value="Delete" cls="btn btn-link" onClick={deleteTask} />
+        <Button
+          value="Delete"
+          cls="btn btn-outline-danger"
+          onClick={deleteTask}
+        >
+          <i className="bi bi-trash"></i>
+        </Button>
       </div>
     </div>
   );

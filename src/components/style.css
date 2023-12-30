@@ -8,3 +8,10 @@
     background-color: #f8f9fa;
     padding: 1rem;
 }
+.task-card {
+    min-width: 19rem;
+    max-width: 20rem;
+}
+i.bi-plus-lg {
+    font-size: 1rem;
+}

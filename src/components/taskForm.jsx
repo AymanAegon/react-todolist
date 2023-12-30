@@ -43,6 +43,7 @@ const TaskForm = ({ onCancel, tasks }) => {
             Task Title
           </label>
           <input
+            autoComplete="off"
             type="text"
             className="form-control"
             id="taskTitle"
@@ -54,6 +55,7 @@ const TaskForm = ({ onCancel, tasks }) => {
             Description
           </label>
           <input
+            autoComplete="off"
             type="text"
             className="form-control"
             id="description"
